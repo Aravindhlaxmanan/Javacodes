@@ -5103,3 +5103,9 @@ org.eclipse.jgit.errors.TransportException: https://github.com/Aravindhlaxmanan/
 
 !ENTRY org.eclipse.equinox.security 1 0 2024-10-15 14:50:15.211
 !MESSAGE New keyring password generated. 
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-10-15 23:53:52.727
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-10-15 23:53:52.735
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
