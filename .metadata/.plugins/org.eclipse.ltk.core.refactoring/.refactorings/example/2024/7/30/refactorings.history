@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;example.Findcommonvalues.java&apos; to &apos;CommonValuesFinder.java&apos;&#x0D;&#x0A;- Original project: &apos;example&apos;&#x0D;&#x0A;- Original element: &apos;example.Findcommonvalues.java&apos;&#x0D;&#x0A;- Renamed element: &apos;example.CommonValuesFinder.java&apos;" description="Rename compilation unit &apos;Findcommonvalues.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;example{Findcommonvalues.java" name="CommonValuesFinder.java" references="false" stamp="1721627907216" version="1.0"/>
+</session>

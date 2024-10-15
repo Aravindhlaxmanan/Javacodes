@@ -1,0 +1,38 @@
+package nwknvghg;
+
+public class patterns {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=5;
+		//pattern(n);
+		pattern1(n);
+
+	}
+	
+	static void pattern(int n)
+	{
+		for(int row=1; row<=n;row++)
+		{
+			for(int col=1;col<=n;col++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+	}
+	static void pattern1(int n)
+	{
+		for(int row=1; row<=n;row++)
+		{
+			for(int col=1;col<=row;col++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+	}
+
+}

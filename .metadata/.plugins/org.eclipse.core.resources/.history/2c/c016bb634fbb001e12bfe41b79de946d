@@ -1,0 +1,45 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+import com.google.common.collect.Table.Cell; 
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class TestDemo  {
+
+	public static void main(String[] args) {
+		WebDriver driver = new EdgeDriver();
+		
+			
+			try {
+	            // Reading from an existing Excel file
+	            FileInputStream fileInputStream = new FileInputStream("input.xlsx");
+	            Workbook workbook = new XSSFWorkbook();
+	            Sheet sheet = workbook.getSheetAt(0); // Assuming the data is in the first sheet
+
+	            // Updating the age in the Excel file
+	            Row johnRow = sheet.getRow(1); // Row index 1 corresponds to the second row
+	            Cell johnAgeCell = johnRow.getCell(1); // Cell index 1 corresponds to the second column (Age)
+	            johnAgeCell.setCellValue(26); // Updating John's age to 26
+
+	            // Creating a new Excel file to write the modified data
+	            FileOutputStream fileOutputStream = new FileOutputStream("output.xlsx");
+	            workbook.write(fileOutputStream);
+
+	            // Closing the streams
+	            fileInputStream.close();
+	            fileOutputStream.close();
+
+	            System.out.println("Data successfully updated and written to output.xlsx");
+	        } 
+			catch (IOException e) {
+	            e.printStackTrace();
+	        }
+	    
+			
+		
+	}
+
+}
