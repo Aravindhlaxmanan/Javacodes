@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Runnerclass (1)" project="cucumbertest" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="Runner.Runnerclass" time="0.055">
+    <testsuite name="Title of your hooks" time="0.055">
+      <testcase name="first scenario" classname="Title of your hooks" time="0.049"/>
+      <testcase name="second scenario" classname="Title of your hooks" time="0.006"/>
+    </testsuite>
+  </testsuite>
+</testrun>

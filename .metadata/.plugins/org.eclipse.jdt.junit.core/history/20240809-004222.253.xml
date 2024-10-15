@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Runnerclass (1)" project="cucumbertest" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="Runner.Runnerclass" time="0.116">
+    <testsuite name="Title of your feature" time="0.116">
+      <testcase name="Login and perform actions #2" classname="Title of your feature" time="0.116">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'I want to login firefox1' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I want to login firefox1")
+public void i_want_to_login_firefox1() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("I open the website1 {string}")
+public void i_open_the_website1(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I login with username1 and password1")
+public void i_login_with_username1_and_password1() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I perform some action1")
+public void i_perform_some_action1() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I take some details from the page1")
+public void i_take_some_details_from_the_page1() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

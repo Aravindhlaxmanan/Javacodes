@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Runnerclass (1)" project="cucumbertest" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="Runner.Runnerclass" time="10.997">
+    <testsuite name="Title of your feature" time="10.997">
+      <testcase name="Try new Login and perform actions" classname="Title of your feature" time="10.997">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'I open orangehrm website  "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I open orangehrm website  {string}")
+public void i_open_orangehrm_website(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I login with admin and admin123")
+public void i_login_with_admin_and_admin123() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

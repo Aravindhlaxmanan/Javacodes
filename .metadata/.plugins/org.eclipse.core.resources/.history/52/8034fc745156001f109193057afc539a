@@ -1,0 +1,64 @@
+package Stepdefinition;
+
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class orangewithdatatable {
+	WebDriver driver = null;
+	
+	@Given("I want to login firefox2")
+	public void i_want_to_login_firefox2() {
+		driver = new FirefoxDriver();
+
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().window().maximize();
+	}
+
+	@Given("I open the website2 {string}")
+	public void i_open_the_website1(String string) {
+		driver.get(string);
+	}
+
+	@When("^I login with (.*) and (.*)$")
+	public void i_login_with_username2_and_password2(String Username, String Password) {
+		
+		//List<String>credentials = dataTable.asList(String.class);
+//		driver.findElement(By.name("username")).sendKeys(credentials.get(0));
+//		driver.findElement(By.name("password")).sendKeys(credentials.get(1));
+	    // Write code here that turns the phrase above into concrete actions
+	    // For automatic transformation, change DataTable to one of
+	    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+	    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+	    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+	    //
+	    // For other transformations you can register a DataTableType.
+		
+		
+		driver.findElement(By.name("username")).sendKeys(Username);
+		driver.findElement(By.name("password")).sendKeys(Password);
+	 
+	}
+
+
+	@Then("I perform some action2")
+	public void i_perform_some_action1() {
+	   
+	}
+
+	@Then("I take some details from the page2")
+	public void i_take_some_details_from_the_page1() {
+	 
+	}
+
+
+
+}

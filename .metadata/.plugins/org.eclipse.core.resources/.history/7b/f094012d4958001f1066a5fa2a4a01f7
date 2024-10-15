@@ -1,0 +1,45 @@
+package Stepdefinition;
+
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import Utils.ExcelUtils;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+
+public class Workexcel {
+	WebDriver driver = null;
+	
+	
+	 List<String[]> excelData;
+	    int rowIndex = 0;
+
+	    public void LoginSteps() {
+	        excelData = ExcelUtils.readExcelData("src/test/resources/data.xlsx", "Sheet1");
+	    }
+	    
+	    
+	@Given("I want to login firefox driver using exceldata")
+	public void i_want_to_login_firefox_driver_using_exceldata() {
+		driver = new FirefoxDriver();
+
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().window().maximize();
+	}
+
+	@Given("I open orangehrm website  {string} using exceldata")
+	public void i_open_orangehrm_website_using_exceldata(String string) {
+		driver.get(string);
+	}
+
+	@When("I login with {string} and {string} using exceldata")
+	public void i_login_with_and_using_exceldata(String string, String string2) {
+		driver.findElement(By.name("username")).excelData.get(rowIndex)[0];;
+		driver.findElement(By.name("password")).sendKeys(string2);
+	}
+
+}

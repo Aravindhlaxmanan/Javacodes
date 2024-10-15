@@ -1,0 +1,45 @@
+package Stepdefinition;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class orangewithdatatable {
+	WebDriver driver = null;
+	
+	@Given("I want to login firefox1")
+	public void i_want_to_login_firefox1() {
+		driver = new FirefoxDriver();
+
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().window().maximize();
+	}
+
+	@Given("I open the website1 {string}")
+	public void i_open_the_website1(String string) {
+		driver.get(string);
+	}
+
+	@When("I login with username1 and password1")
+	public void i_login_with_username1_and_password1() {
+	
+	}
+
+	@Then("I perform some action1")
+	public void i_perform_some_action1() {
+	   
+	}
+
+	@Then("I take some details from the page1")
+	public void i_take_some_details_from_the_page1() {
+	 
+	}
+
+
+
+}

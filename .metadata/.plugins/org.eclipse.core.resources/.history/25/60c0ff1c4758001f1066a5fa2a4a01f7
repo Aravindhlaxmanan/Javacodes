@@ -1,0 +1,24 @@
+package Stepdefinition;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+
+public class OrangeHRMwithdata {
+	
+	@Given("I want to login firefox driver")
+	public void i_want_to_login_firefox_driver() {
+	  
+	}
+
+	@Given("I open orangehrm website  {string}")
+	public void i_open_orangehrm_website(String string) {
+	   
+	}
+
+	@When("I login with admin and admin123")
+	public void i_login_with_admin_and_admin123() {
+	
+	}
+
+
+}

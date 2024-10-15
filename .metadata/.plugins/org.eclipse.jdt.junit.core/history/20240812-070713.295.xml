@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Runnerclass (1)" project="cucumbertest" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="Runner.Runnerclass" time="0.059">
+    <testsuite name="Title of your feature #2" time="0.059">
+      <testcase name="Try new Login and perform actions with excel data" classname="Title of your feature #2" time="0.059">
+        <error>java.lang.NullPointerException: Cannot invoke "java.util.List.get(int)" because "this.excelData" is null&#13;
+	at Stepdefinition.Workexcel.i_login_with_using_exceldata_new(Workexcel.java:45)&#13;
+	at ✽.I login with using exceldata new(file:///C:/Users/aravindhl/eclipse-workspace/cucumbertest/src/test/resources/Feature/excel.feature:28)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

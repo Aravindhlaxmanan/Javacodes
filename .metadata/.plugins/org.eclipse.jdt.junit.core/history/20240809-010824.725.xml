@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Runnerclass (1)" project="cucumbertest" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="Runner.Runnerclass" time="65.3">
+    <testsuite name="Title of your feature" time="65.3">
+      <testcase name="Try new Login and perform actions" classname="Title of your feature" time="65.3">
+        <error>io.cucumber.datatable.UndefinedDataTableTypeException: Can't convert DataTable to List&lt;java.lang.String&gt;.
+Please review these problems:
+
+ - There was a table cell transformer for java.lang.String but the table was too wide to use it.
+   Please reduce the table width to use this converter.
+
+ - There was no table entry or table row transformer registered for java.lang.String.
+   Please consider registering a table entry or row transformer.
+
+ - There was no default table entry transformer registered to transform java.lang.String.
+   Please consider registering a default table entry transformer.
+
+Note: Usually solving one is enough&#13;
+	at io.cucumber.datatable.UndefinedDataTableTypeException.listNoConverterDefined(UndefinedDataTableTypeException.java:102)&#13;
+	at io.cucumber.datatable.DataTableTypeRegistryTableConverter.toList(DataTableTypeRegistryTableConverter.java:144)&#13;
+	at io.cucumber.datatable.DataTable.asList(DataTable.java:199)&#13;
+	at Stepdefinition.orangewithdatatable.i_login_with_username2_and_password2(orangewithdatatable.java:34)&#13;
+	at ✽.I login with username2 and password2(file:///C:/Users/aravindhl/eclipse-workspace/cucumbertest/src/test/resources/Feature/orangehrm.feature:34)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

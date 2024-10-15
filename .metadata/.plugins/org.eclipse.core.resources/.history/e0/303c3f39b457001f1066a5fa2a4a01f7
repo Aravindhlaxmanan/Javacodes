@@ -1,0 +1,15 @@
+package hooks;
+
+public class cucumberhooks {
+	
+	public static void beforerun()
+	{
+		System.out.println("before");
+	}
+	
+	public static void afterrun()
+	{
+		
+	}
+
+}

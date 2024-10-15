@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Runnerclass (1)" project="cucumbertest" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="Runner.Runnerclass" time="18.329">
+    <testsuite name="Title of your feature #3" time="18.329">
+      <testcase name="Login and perform actions" classname="Title of your feature #3" time="18.329">
+        <error>java.io.FileNotFoundException: C:\Users\aravindhl\eclipse-workspace\cucumbertest\target\Result\page1.png (The system cannot find the path specified)&#13;
+	at java.base/java.io.FileOutputStream.open0(Native Method)&#13;
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)&#13;
+	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:230)&#13;
+	at com.google.common.io.Files$FileByteSink.openStream(Files.java:197)&#13;
+	at com.google.common.io.Files$FileByteSink.openStream(Files.java:185)&#13;
+	at com.google.common.io.ByteSource.copyTo(ByteSource.java:279)&#13;
+	at com.google.common.io.Files.copy(Files.java:328)&#13;
+	at WebElementObject.Screenshot.Capturescreenshot(Screenshot.java:18)&#13;
+	at Stepdefinition.orangehrm.i_login_with_username_and_password(orangehrm.java:52)&#13;
+	at ✽.I login with username and password(file:///C:/Users/aravindhl/eclipse-workspace/cucumbertest/src/test/resources/Feature/orangehrm.feature:26)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>
