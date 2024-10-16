@@ -25,5 +25,15 @@ git push -u origin(URL) master 					git switch main - switch to main branch
 								git branch -all - will show the remote branch also 
 
 								git branch -d branch2 - will delete that branch
+
+
+
+cd /path/to/your/second/workspace
+git init
+git checkout -b workspace2
+git remote add origin https://github.com/username/your-repo.git
+git add .
+git commit -m "Initial commit of second workspace"
+git push -u origin workspace2
 								
 
