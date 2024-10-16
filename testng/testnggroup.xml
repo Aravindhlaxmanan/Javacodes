@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Grouptestsuite" verbose="2">
+	<test name="TryGroup">
+
+		<groups>
+			<run>
+				<include name="name"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="testng.testsuite"></class>
+			<class name="testng.Testgrouping"></class>
+
+
+		</classes>
+	</test>
+</suite>

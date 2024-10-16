@@ -1,0 +1,81 @@
+API- Postman
+
+GET- This used to retrive data from the URL given		Error codes		
+								200(OK)- Requested resource is retrived
+POST- This is used to post the data to the URL 			400(Bad Request)- There’s something wrong with the request (invalid data, missing fields).
+								404(Not Found)- Requested resource could not be found 								
+PUT- This is used to update the data stored in the URL 		401(Unauthorized)- This rwquest requires user authentication
+								201- Requested resource is fullfilled and new resource created 
+DELETE- This is used to delete the data in the URL		403(Forbidden) - API request and authentication succesful but no authorization  
+								500(Internal Server error)- Server encountered an error and could not complete the request
+
+HTTPS STATUS CODES
+
+200 OK: Request succeeded.
+400 Bad Request: There’s something wrong with the request (invalid data, missing fields).
+401 Unauthorized: Authentication required or failed.
+403 Forbidden: You don’t have permission to access the resource.
+404 Not Found: The requested resource does not exist.
+500 Internal Server Error: The server encountered an unexpected condition.
+
+
+
+Basic Authentication - Giving Username and password
+Bearer Authentication - taking the token by logging in and using that to retrive resource from required area.
+Digest Auth - Send request --> face 401 error --> realm , nonce ,qop data given --> 200 ok 
+
+
+OAUTH 2.0- 
+
+"OAuth 2.0 is an authorization framework that allows third-party applications to access user resources (like Google Drive files) 
+on behalf of the user,without the app needing the user's password. 
+It works by issuing access tokens after the user consents to sharing their data. 
+The most common flow, Authorization Code Flow, ensures that user credentials remain private while enabling the app to perform limited actions based on the permissions the user granted."
+
+Initial value- can be shared across team , and retained across sessions.
+Current value- Local to session and data cant be shared can be used here like password, authtoken(sensitive data), can be updated , will not affect others.
+
+
+Global Variable - partial link can be stored in a variable and can be used across all the collections(not prefered , say no in interview)
+Environment variables- Ex: username password can be differently set for different api requests (like prod, QA Environment URL)
+Collection variables - Variables can be set for the collection and can be used within it.
+
+
+pm.test("i want assert code 200", function(){
+   pm.response.to.have.status(200);
+})
+
+pm -> postman object for request and response body 
+
+
+Data from external files(JSON)-
+
+Create a json file and create a request with POST and enter the body like json with variable enclosed within brackets for unique data.
+
+{
+firstname: "{{name}}"
+age: {{age}} 
+}
+
+Pre-Request script:
+
+It is used to execute before and after the request/response.
+
+Hierachy
+
+Collection pre
+Folder level pre
+before Request
+request
+collection post
+folder level post
+after request
+
+SANDBOX- In postman , the pre request script and test script is written by using java script.
+
+Request chaining: get a response store the needed variable as global,env or collection and set it as input in the next request
+
+SetnextRequest() - > It will given in the testscript area, after an request it will run , it will execute after all the codes in testscript.
+
+
+

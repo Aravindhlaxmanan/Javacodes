@@ -1,0 +1,29 @@
+Touch - used to create a file in folder
+EX: Touch index.html
+
+git init - used to create local repository
+
+git add - to add that file
+EX: add index.html						git log - will show the activity 
+
+git rm --cached - to remove the file 				git diff - will show the difference between the commits
+git rm --cached index.html
+								git diff --staged - will show diff in staged area
+git add. -  it will add all the files
+
+git add *.html - it will add all the html files 		git commit -a - it will directly commit without staging 
+
+git commit -m "initial commit(commit message)" 			git branch -M main
+
+git remote add origin "repository link"				git checkout-b "newsubbranch"			
+
+git push -u origin(URL) master 					git switch main - switch to main branch
+ 
+								git switch -c branch2 - it will create new and switch to it
+
+								git branch - will show local branches
+								git branch -all - will show the remote branch also 
+
+								git branch -d branch2 - will delete that branch
+								
+

@@ -1,0 +1,13 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Mytestsuite" verbose="2">
+	<test name="example">
+		<parameter name="DOG" value="Barking"></parameter>
+		
+		<parameter name="times" value="2"></parameter>
+		<classes>
+			<class name="testng.Parameterzization"></class>
+		</classes>
+	</test>
+</suite>

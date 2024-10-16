@@ -1,0 +1,25 @@
+Testing cycle - basic understanding
+
+BAU Code - Basic and important functionality available from the scratch development.
+
+In the start buisness will allocate funds and will ready the requirments, then buisness analyst will check the requirments
+and prepare an FR for that.
+
+Then according to requirments developer will devlop and deploy the code in the same time tester will also design the cases according to
+the requirments.
+
+Then it will go to SIT Environment - it is like basic carbon copy (testing will be done over there)
+
+Then Buisness analyst will check the tester designs and approve for execution.
+
+Then code will deployed by the developer , Sanity (important function will tested ) will happen.
+
+Then UAT- (User acceptance testing) will happen for the new inline code.
+
+UAT1 Is based on CITI execution will be done after inline execution and before base regression.
+
+After completing inline we will do regression(functionality before adding new codes) this have to work without any defects.
+
+"Turn off regression cases" - Regression tests are designed to ensure that existing functionalities continue to work correctly after any code changes. 
+Turning off regression cases means temporarily excluding these tests from the test execution process. 
+This can be useful for speeding up the testing cycle or focusing on new tests

@@ -1,0 +1,8 @@
+package testng;
+
+import org.testng.ITestListener;
+
+public class listenerstry implements ITestListener{
+
+}
+	
