@@ -21,6 +21,9 @@ class advcalc extends Calc
 // Method overriding will call the method of the object created class even if it extends
 //class with same method name.
 
+// p obj = new c --- correct
+// c obj - new p ---wrong , becaues parent will not have all the properties and methods of child
+
 public class Method_overriding {
 
 	public static void main(String[] args) {
