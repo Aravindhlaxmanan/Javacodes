@@ -26,6 +26,9 @@ class details
 	
 }
 
+//Since direct access to fields is restricted, 
+//the integrity of the data is maintained, and invalid values can be intercepted.
+
 public class Encapsulation {
 
 	public static void main(String[] args) {
