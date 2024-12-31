@@ -30,7 +30,14 @@ public class Method_overriding {
 		// TODO Auto-generated method stub
 		advcalc obj = new advcalc();
 		int result = obj.add(3, 4);
-		System.out.println(result);
+		
+		Calc obj2 = new advcalc();
+		int result1 = obj2.add(3, 4);
+		System.out.println(result1);
+		
+		Calc obj1 = new Calc();
+		int secondresult=obj1.add(3, 7);
+		System.out.println(secondresult);
 		
 
 	}
